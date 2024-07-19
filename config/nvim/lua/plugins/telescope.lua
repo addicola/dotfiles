@@ -99,8 +99,7 @@ return {
       opts.extensions = {
         project = {
           base_dirs = {
-            { path = "~/Code/" },
-            { path = "~/projects/plugins/" },
+            { path = "~/code/" },
             { path = "~/.local/share/nvim/" },
           },
         },
@@ -118,10 +117,10 @@ return {
       { "<leader>xs", "<cmd>Telescope lsp_document_symbols<cr>", desc = "LSP Document Symbols" },
       { "<leader>xS", "<cmd>Telescope lsp_dynamic_workspace_symbols<cr>", desc = "LSP Workspace Symbols" },
       { "<leader>sM", "<cmd>Telescope man_pages sections=ALL<cr>", desc = "Man Pages" },
-      { "<leader>ff", Util.telescope("find_files"), desc = "Find files (root dir not git)" },
+      -- { "<leader>ff", Util.telescope("find_files"), desc = "Find files (root dir not git)" },
       { "<leader>sb", "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "Current Buffer Fuzzy" },
       { "<leader>gb", "<cmd>Telescope git_bcommits<cr>", desc = "Buffer commits" },
-      { "<leader>U", "<cmd>Telescope undo<cr>", desc = "Telescope undo" },
+      { "<leader>U", "<cmd>Teldscope undo<cr>", desc = "Telescope undo" },
     },
     config = function(_, opts)
       local telescope = require("telescope")

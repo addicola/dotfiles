@@ -231,7 +231,7 @@ return {
     "akinsho/toggleterm.nvim",
     config = function()
       require("toggleterm").setup({
-        size = 40,
+        size = 50,
         open_mapping = [[<c-\>]],
         shade_filetypes = {},
         shade_terminals = true,

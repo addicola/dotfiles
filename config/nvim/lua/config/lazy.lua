@@ -13,7 +13,7 @@ require("lazy").setup({
       "LazyVim/LazyVim",
       import = "lazyvim.plugins",
       opts = {
-        colorscheme = "nightfox",
+        colorscheme = "tokyonight",
         news = {
           lazyvim = true,
           neovim = true,
@@ -28,9 +28,9 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.json" },
     { import = "lazyvim.plugins.extras.ui.mini-animate" },
     { import = "lazyvim.plugins.extras.editor.mini-files" },
-    { import = "lazyvim.plugins.extras.coding.copilot", opts = {
-      suggestion = { enabled = true },
-    } },
+    -- { import = "lazyvim.plugins.extras.coding.copilot", opts = {
+    --   suggestion = { enabled = true },
+    -- } },
     -- import/override with your plugins
     { import = "plugins" },
   },

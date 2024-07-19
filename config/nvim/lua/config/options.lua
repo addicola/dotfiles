@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+vim.g.autoformat = false
 
 vim.scriptencoding = "utf-8"
 vim.opt.encoding = "utf-8"
@@ -44,7 +45,7 @@ vim.cmd([[au BufNewFile,BufRead *.astro setf astro]])
 vim.cmd([[au BufNewFile,BufRead Podfile setf ruby]])
 
 if vim.fn.has("nvim-0.8") == 1 then
-	vim.opt.cmdheight = 0
+  vim.opt.cmdheight = 0
 end
 
 -- lsp
